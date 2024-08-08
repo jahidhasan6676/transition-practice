@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore animation</title>
+    <style>
+        /* @keyframes jahid {
+            from{
+                left: 0;
+            }
+            to{
+                left:550px;
+                background-color: brown;
+            } */
+        
+        @keyframes bounce {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                left: 150px;
+                top: 250px;
+                background-color: blue;
+            }
+            50%{
+                left:300px;
+                top: 0px;
+            }
+            
+            100%{
+                left:500px;
+                top:250px;
+            }
+        }
+        .stage{
+            width:550px;
+            height:300px;
+            background-color: aqua;
+            border:2px solid red;
+        }
+        .ball{
+            width:50px;
+            height:50px;
+            background-color: red;
+            border-radius:50%;
+            position:relative;
+            /* animation: jahid 2s ease-in-out 1s infinite  alternate ; */
+            animation: bounce 3s ease-in-out 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Animation</h2>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
