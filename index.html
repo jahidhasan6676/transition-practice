@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transition practice explore</title>
+    <style>
+        .field{
+            border:2px solid red;
+           
+            
+        }
+        .field img{
+            width:200px;
+
+        }
+        .bat{
+            transition: 0.1s;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .field:hover .ball{
+            transform: translate(1000px,  -500px);
+        }
+        .ball{
+            width:30px;
+            height:30px;
+            background-color: red;
+            border-radius:50%;
+            position: relative;
+            left:350px;
+            top:-150px;
+            transition: transform 1s ease-in 0.1s;
+        }
+    </style>
 </head>
 <body>
+    <div class="field">
+        <img src="bat.webp" class="bat">
+        <div class="ball"></div>
+    </div>
+    
     
 </body>
 </html>
